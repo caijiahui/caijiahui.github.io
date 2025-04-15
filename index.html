@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>跳转中...</title>
-    <script>
-        // iOS微信特殊处理
-        function isWeixinIOS() {
-            return /iPhone|iPod|iPad/i.test(navigator.userAgent) && /MicroMessenger/i.test(navigator.userAgent);
-        }
-        
-        if(isWeixinIOS()) {
-            // iOS微信需要用户点击后才能跳转
-            document.write('<a href="https://ableclub-akmc.advantech.com.cn/AKMC/zh-cn/Event/Detail/28395" style="display:block;padding:20px;background:#07C160;color:white;text-align:center;">点击继续访问</a>');
-        } else {
-            // Android和其他浏览器直接跳转
-            window.location.href = "https://ableclub-akmc.advantech.com.cn/AKMC/zh-cn/Event/Detail/28395";
-        }
-    </script>
+    <style>
+        body, html { margin: 0; padding: 0; overflow: hidden; }
+        iframe { width: 100%; height: 100vh; border: none; }
+    </style>
 </head>
-<body></body>
+<body>
+    <iframe src="https://ableclub-akmc.advantech.com.cn/AKMC/zh-cn/Event/Detail/28395"></iframe>
+</body>
 </html>
